@@ -7,25 +7,25 @@
   <!--<link rel="stylesheet" type="text/css" href="./assets/css/form.css">-->
   <link rel="stylesheet" type="text/css" href="assets/styles.css">
 </head>
-
 <body class="body" id="body">
     <div class="wrapper">
       <header class="header">
-        <button class="favorite styled" type="button"></button>
+        <button class="colormode" id="colormode" type="button" img src="assets/images/day-mode.png"></button>
       </header>
       <main class="bodycontent">
       <h1 class="myfirstblog">My First Blog</h1>
       <section class="inputfields">
-        <h2>What's on your mind?</h2>
-         <table>
+        <div class="vertical-row"></div>
+        <h2 class="mindtext">What's on your mind?</h2>
+         <table class="inputTable" id="inputTable">
           <thead>
             <tr>
-              <label for="username">Username</label>
-              <input type ="text" id="username" placeholder="Enter Username" maxlength="25">
-              <label for="title">Title</label>
-              <input type ="text" id="title" placeholder="Enter Title" maxlength="25">
-              <label for="content">Content</label>
-              <input type ="text" id="content" placeholder="Enter Content" maxlength="4000">
+              <label class="inputTable" for="username">Username</label>
+              <input class="inputTable" type ="text" id="username" placeholder="Enter Username" maxlength="25">
+              <label class="inputTable" for="title">Title</label>
+              <input class="inputTable" type ="text" id="title" placeholder="Enter Title" maxlength="25">
+              <label class="inputTable" for="content">Content</label>
+              <input class="contentbox" class="inputTable" type ="text" id="content" placeholder="Enter Content" maxlength="4000">
   
               <p class="usernameoutput" id="usernameOutput"></p>
               <p class="titleoutput" id="titleOutput"></p>
@@ -44,26 +44,7 @@
     </div>-->
   </section>
   </main>
-    <script>
-        const userName = document.getElementById('username');
-        const title = document.getElementById('title');
-        const content = document.getElementById('content');
-        const submitButton = document.getElementById('submit-btn');
-        /* const AddEmployeesButton = document.getElementById('add-employees-btn'); */
-        const outputUsername = document.getElementById('usernameOutput');
-        const outputTitle = document.getElementById('titleOutput');
-        const outputContent = document.getElementById('contentOutput');
-  
-        function CreateBlog() {
-              outputUsername.innerHTML = userName.value;
-              outputTitle.innerHTML = title.value;
-              outputContent.innerHTML = content.value;
-  
-        }
-  
-        submitButton.addEventListener('click', CreateBlog);
-  
-    </script>
+    <script src="assets/js/blog.js"></script>
   </body>
   
   </html>
