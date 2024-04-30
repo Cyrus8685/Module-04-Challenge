@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <title>My First Blog</title>
   <!--<link rel="stylesheet" type="text/css" href="./assets/css/form.css">-->
-  <link rel="stylesheet" type="text/css" href="assets/styles.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/form.css">
 </head>
 <body class="body" id="body">
     <div class="wrapper">
@@ -21,17 +21,13 @@
           <thead>
             <tr>
               <label class="inputTable" for="username">Username</label>
-              <input class="inputTable" type ="text" id="username" placeholder="Enter Username" maxlength="25">
+              <input class="inputTable" type ="text" required id="username" maxlength="25">
               <label class="inputTable" for="title">Title</label>
-              <input class="inputTable" type ="text" id="title" placeholder="Enter Title" maxlength="25">
-              <label class="inputTable" for="content">Content</label>
-              <input class="contentbox" class="inputTable" type ="text" id="content" placeholder="Enter Content" maxlength="4000">
-  
-              <p class="usernameoutput" id="usernameOutput"></p>
-              <p class="titleoutput" id="titleOutput"></p>
-              <p class="contentOutput" id="contentOutput"></p>
+              <input class="inputTable" type ="text" required id="title" maxlength="25">
+              <label class="inputTable">Content</label>
+              <input class="contentbox" type ="text" required id="content" maxlength="4000" TextMode="MultiLine">
             </tr>
-            <input type="button" value="Submit"<button id="submit-btn" class="btn"></button>
+            <input type="button" value="Submit" <button id="submit-btn" class="btn"></button></input>
           </thead>
           <tbody id="employee-table">
           </tbody>
@@ -44,7 +40,7 @@
     </div>-->
   </section>
   </main>
-    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/form.js"></script>
   </body>
   
   </html>
