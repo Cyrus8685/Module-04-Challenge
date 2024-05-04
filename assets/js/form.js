@@ -27,18 +27,27 @@ toggle.addEventListener("click", () => {
 submitBtn.addEventListener("click",  async function (submit) {
 
 const Users = [];
-const currentUsernames = JSON.parse(localStorage.getItem('Username'));
+let currentUsernames = JSON.parse(localStorage.getItem('Username'));
+
+if (currentUsernames == null) {
+     currentUsernames = [];
+};
+
 if (currentUsernames.length >= 5) {
-     currentUsernames.length = 0
-}
+     currentUsernames.length = 0;
+};
+
 const newUsername= document.getElementById('username').value;
 if (newUsername == "") {
   submit.preventDefault();
   alert("Please enter your Username");}
+
   else {
+
 if (currentUsernames === null) {
   Users.push(newUsername);
   localStorage.setItem('Username', JSON.stringify(Users));
+
 } else {
 currentUsernames.push(newUsername);
 localStorage.setItem('Username', JSON.stringify(currentUsernames));
@@ -46,38 +55,54 @@ localStorage.setItem('Username', JSON.stringify(currentUsernames));
   };
 
 const Title = [];
-const currentTitles = JSON.parse(localStorage.getItem('Title'));
+let currentTitles = JSON.parse(localStorage.getItem('Title'));
+
+if (currentTitles == null) {
+  currentTitles = [];
+};
+
 if (currentTitles.length >= 5) {
-  currentTitles.length = 0
-}
+  currentTitles.length = 0;
+};
+
 const newTitle= document.getElementById('title').value;
+
 if (newTitle == "") {
   submit.preventDefault();
   alert("Please enter your Title");}
+
   else {
 if (currentTitles === null) {
   Title.push(newTitle);
   localStorage.setItem('Title', JSON.stringify(Title));
+
 } else {
-  currentTitles.push(newTitle);
+currentTitles.push(newTitle);
 localStorage.setItem('Title', JSON.stringify(currentTitles));
 }
   };
 
 const Content = [];
-const currentContent = JSON.parse(localStorage.getItem('Content'));
-if (currentContent.length >= 5) {
-  currentContent.length = 0
+let currentContent = JSON.parse(localStorage.getItem('Content'));
+if (currentContent == null) {
+  currentContent = [];
 }
+
+if (currentContent.length >= 5) {
+  currentContent.length = 0;
+};
+
 const newContent= document.getElementById('content').value;
 if (newContent == "") {
   submit.preventDefault();
   alert("Please enter your Content");} 
+
   else {
 if (currentContent === null) {
   Content.push(newContent);
   localStorage.setItem('Content', JSON.stringify(Content));
-} else {
+} 
+else {
   currentContent.push(newContent);
 localStorage.setItem('Content', JSON.stringify(currentContent));
 }}

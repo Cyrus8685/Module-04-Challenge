@@ -4,48 +4,54 @@
 <head>
   <meta charset="UTF-8" />
   <title>My First Blog</title>
-  <!--<link rel="stylesheet" type="text/css" href="./assets/css/form.css">-->
-  <link rel="stylesheet" type="text/css" href="assets/css/form.css">
+  <script src="https://kit.fontawesome.com/d64cd1191c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/blog.css">
 </head>
+<header class="header">
+  <button class  = "back" id="back">Back</button>
+  <article class="firstBlog" id="firstBlog">My First Blog</article>
+  <button class="colormode" id="colormode" type="button" img src="assets/images/day-mode.png"></button>
+</header>
 <body class="body" id="body">
     <div class="wrapper">
-      <header class="header">
-        <button class  = "back" id="back">Back</button>
-        <article>My First Blog</article>
-        <button class="colormode" id="colormode" type="button" img src="assets/images/day-mode.png"></button>
-      </header>
-      <main class="main">
       <section class="blogtitles" id="blogtitles">
          <table class="blogtable" id="blogtable">
-          <thead>
-            <tr>
-              <label class="title1" id="title1">Title 1</label>
-
-                  <h class="content1" id="content1">Content 1</h>
-
-                      <p>Posted By: </p><p class="postname1" id="postname1"></p>
-              <label class="title2" id="title2">Title 2</label>
-                  <h class="content2" id="content2">Content 2</h>
-                      <p>Posted By: </p><p class="postname2" id="postname2"></p>
-              <label class="title3" id="title3">Title 3</label>
-                  <h class="content3" id="content3">Content 3</h>
-                      <p>Posted By: </p><p class="postname3" id="postname3"></p>
-              <label class="title4" id="title4">Title 4</label>
-                  <h class="content4" id="content4">Content 4</h>
-                      <p>Posted By: </p><p class="postname4" id="postname4"></p>
-              <label class="title5" id="title5">Title 5</label>
-                  <h class="content5" id="content5">Content 5</h>
-                      <p>Posted By: </p><p class="postname5" id="postname5"></p>
-            </thead>
-        <tbody id="employee-table">
-        </tbody>
+          <figure class="blogsections" id="blogsections">
+              <label class="title" id="title1">Title 1</label>
+                  <h class="content" id="content1">Content 1</h>
+                    <p class="postname" id="postname1">Posted By: </p>
+           </figure> 
+           <figure class="blogsections" id="blogsections">        
+              <label class="title" id="title2">Title 2</label>
+                  <h class="content" id="content2">Content 2</h>
+                      <p class="postname" id="postname2">Posted By: </p>
+            </figure> 
+            <figure class="blogsections" id="blogsections">
+              <label class="title" id="title3">Title 3</label>
+                  <h class="content" id="content3">Content 3</h>
+                      <p class="postname" id="postname3">Posted By: </p>
+            </figure> 
+            <figure class="blogsections" id="blogsections">
+              <label class="title" id="title4">Title 4</label>
+                  <h class="content" id="content4">Content 4</h>
+                      <p class="postname" id="postname4">Posted By: </p>
+            </figure> 
+            <figure class="blogsections" id="blogsections">
+              <label class="title" id="title5">Title 5</label>
+                  <h class="content" id="content5">Content 5</h>
+                      <p class="postname" id="postname5">Posted By: </p>
+            </figure> 
          </table>
-  </section>
-  </main>
-    <script src="assets/js/blog.js"></script>
-  </body>
+      </section>
+  </div>
   <footer class="footer">
-    <a href="mailto:jonathan.a.negron@gmail.com" class="footer-link">jonathan.a.negron@gmail.com</a>
-    <a class="social-list__link" href="https://www.python.org/"><i class="fa-brands fa-python"></i></a>
-</footer>
-  </html>
+    <a class="made">Made with <i class="fa-sharp fa-solid fa-heart" style="color: red;"></i> by Jonathan Negron</a>
+    <p class="footerwrapper">
+    <p class="key">Portfolio: <a class="value">Jonathan Negron</a></p>
+    <p class="key">Blog: <a class="value">Full-Stack Blog</a></p>
+    <p class="key">E-mail: <a class="value">jonathan.a.negron@gmail.com</a></p>
+    </p>
+   </footer>
+</body>
+   <script src="assets/js/blog.js"></script>
+</html>

@@ -75,8 +75,7 @@ button {
 }
 
 .btn {
-  width: 100%; 
-  padding-left: 20px;
+  width: 614px;
   background-color: var(--btn-bg-color);
   color: var(--btn-text-color);
   padding-top: 14px;
@@ -94,16 +93,15 @@ button {
   justify-content: space-between;
   height: 25px;
   width: 600px;
-  padding: 6.5px;
-  transform: scale(.9875);
+  margin-top: 6.5px;
+  margin-bottom: 5px;
 }
 
 .contentbox {
-  padding: 25px;
-  width: 553px;
-  margin-left: 5px;
-  margin-bottom: 25px;
-
+  width: 600px;
+  margin-left: 2.5px;
+  height: 100px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 400px) {

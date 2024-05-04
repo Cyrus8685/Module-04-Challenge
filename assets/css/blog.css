@@ -1,24 +1,70 @@
-html body {
-    border: solid 5px var(--border-color);
-    margin: .275px;
-    margin-bottom: 10px;
-    height: 875px;
-  
+html {
+  margin-left: .5px;
+  margin-right: .5px;
+}
+
+header {
+    height: 12.5vh;
+    position: relative;
+    border-bottom: solid 5px white;
+    }
+
+  footer {
+    margin-bottom: 15px;
+    border-top: solid 4px black;
+    width: 100%;
+    height: 100px;
+    margin-top: 6px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }  
+p {
+  margin: 0;
+}
+  .wrapper {
+    border-bottom: solid 4px black;
+    border-top: double 10px black;
+    flex-direction: column;
+    padding-bottom: 5px;
   }
-  
-  header {
-    border-bottom: double 7px var(--border-color);
-    margin-top: 45px;
+
+  .blogsections {
+    border: solid 2.5px var(--border-color);
+    margin: 5px;
+    padding: 10px;
+    display: grid;
   }
-  
+
+.title {
+  border-bottom: solid 1.5px var(--border-color);
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h {
+  margin-left: 15px;
+  padding-bottom: 75px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.postname {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
   /* Define the light theme (default) */
   :root {
     --bg-color: white; /* Background color */
     --text-color: black; /* Text color */
-    --border-color:black;
+    --border-color: black;
     --mode-theme: url("/Users/cyrus/bootcamp/homework/Module-04-Challenge/assets/images/day-mode.png");
     --btn-bg-color: black;
     --btn-text-color: white;
+    --back-arrow: url("/Users/cyrus/bootcamp/homework/Module-04-Challenge/assets/images/WhiteArrow.ico");
   }
   /* Define the dark theme */
   .dark-theme {
@@ -28,13 +74,15 @@ html body {
     --mode-theme: url("/Users/cyrus/bootcamp/homework/Module-04-Challenge/assets/images/moon-and-stars.png");
     --btn-bg-color: white;
     --btn-text-color: black;
+    --back-arrow: url("/Users/cyrus/bootcamp/homework/Module-04-Challenge/assets/images/LeftArrow.png");
+
   
   }
   /* Apply the theme colors to the body element */
   body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    border: var(--border-color);
+    margin: 0; 
   }
 
   button {
@@ -46,8 +94,8 @@ html body {
   /* Style the toggle button */
   #colormode {
     position: absolute;
-    top: 18px;
-    right: 18px;
+    top: 30px;
+    right: 25px;
     padding: 8px;
     transform: scale(2.0);
     cursor: pointer; /* Change the cursor to a pointer */
@@ -55,4 +103,56 @@ html body {
   /* Change the button color on hover */
   #colormode:hover {
     background-color: gray;
+  }
+
+  .firstBlog {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 27.5px;
+    padding-bottom: 25px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-top: 25px;
+    
+  }
+
+  .back {
+    position: absolute;
+    top: 18px;
+    right: 65px;
+    padding: 75px;
+    padding-right:  20px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    padding-left: 60px;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: 0;
+    border-radius: 3.5px;
+    font-weight: bold;
+    background-image: var(--back-arrow);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center left 20px;
+    margin-left: 5px;
+  }
+
+  .footerwrapper {
+    display: contents;
+    justify-content: left;
+  }
+
+  .made {
+    margin-left: 500px;
+  }
+
+  .key {
+    margin: 10px;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .value {
+    font-weight: normal;
   }
