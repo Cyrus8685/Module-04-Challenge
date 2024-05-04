@@ -1,0 +1,129 @@
+html body {
+  border: solid 5px var(--border-color);
+  margin: .275px;
+  margin-bottom: 10px;
+  height: 875px;
+
+}
+
+header {
+  border-bottom: double 7px var(--border-color);
+  margin-top: 45px;
+}
+
+/* Define the light theme (default) */
+:root {
+  --bg-color: white; /* Background color */
+  --text-color: black; /* Text color */
+  --border-color:black;
+  --mode-theme: url("/MyFirstBlog/assets/images/day-mode.png");
+  --btn-bg-color: black;
+  --btn-text-color: white;
+}
+/* Define the dark theme */
+.dark-theme {
+  --bg-color: black; /* Background color */
+  --text-color: white; /* Text color */
+  --border-color: white;
+  --mode-theme: url("/MyFirstBlog/assets/images/moon-and-stars.png");
+  --btn-bg-color: white;
+  --btn-text-color: black;
+
+}
+/* Apply the theme colors to the body element */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: var(--border-color);
+}
+
+button {
+  background-image: var(--mode-theme);
+  background-size: cover;
+  border: 0;
+  background-color: var(--bg-color);
+}
+/* Style the toggle button */
+#colormode {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  padding: 8px;
+  transform: scale(2.0);
+  cursor: pointer; /* Change the cursor to a pointer */
+}
+/* Change the button color on hover */
+#colormode:hover {
+  background-color: gray;
+}
+
+.mindtext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 27.5px;
+  padding-left: 200px;
+  padding-top: 140px;
+}
+
+.inputfields {
+  width: 50%; 
+  padding-left: 20px;
+  padding-right: 19px;
+  padding-bottom: 10px;
+  border-left:double 7px var(--border-color);
+  height: 815px;
+}
+
+.btn {
+  width: 614px;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  padding-top: 14px;
+  padding-bottom: 12px;
+  border: 0;
+  border-radius: 2.5px;
+  font-weight: bold;
+  margin-bottom: 100px;
+  transform: scale(.9875);
+}
+
+.inputTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25px;
+  width: 600px;
+  margin-top: 6.5px;
+  margin-bottom: 5px;
+}
+
+.contentbox {
+  width: 600px;
+  margin-left: 2.5px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 400px) {
+.myfirstblog {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 55px;
+  text-align: center;
+  width: 100%; 
+  line-height: 11;
+  margin: 0%;
+ padding: 0%;
+ background-position: 0px 0px;
+  transform: scale(0.71);
+    width: 50%;
+    height: 615px;
+    border-radius: 50%;
+    background-image: repeating-linear-gradient(180deg,rgb(254, 227, 130), hwb(54 15% 12%), rgb(231, 176, 74), rgb(121, 91, 19));
+}
+}
+.bodycontent {
+  display: flex; 
+  flex-direction: row;
+}
+
