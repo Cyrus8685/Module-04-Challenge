@@ -4,6 +4,10 @@ My First Blog
 - The values are stored in local storage and then retrieved and displayed on the second page in the categories associated with their values.
 - I also have setup and button to change the display modes between day mode and night mode.
 - There is also a functional back button that will take the user back to the main page to enter more data.
+
+Github Repository Link: https://github.com/Cyrus8685/MyFirstBlog
+
+Deployed Application Link: https://cyrus8685.github.io/MyFirstBlog/assets/html/blog.html
   
 Screenshots:
 <img width="1279" alt="2024-05-04_18-34-49" src="https://github.com/Cyrus8685/MyFirstBlog/assets/157924150/2a089317-3c6b-4059-b60e-68a98fb6b330">
