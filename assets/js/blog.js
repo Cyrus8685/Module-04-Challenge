@@ -46,7 +46,7 @@ if (content[4]  || "") {content5.textContent = `${content[4]}`;}
 if (userName[4] || "") {postname5.insertAdjacentText("beforeend", `${userName[4]}`);}
 
 back.addEventListener('click',  async function () {
-      window.location.assign('index.html');
+      window.location.assign('/MyFirstBlog/index.html');
 }); 
 
 // Get the root element

@@ -109,7 +109,7 @@ localStorage.setItem('Content', JSON.stringify(currentContent));
 
 if (newUsername !== "" & newTitle !== "" & newContent !== "") {
 
- window.location.assign('blog.html');
+ window.location.assign('/MyFirstBlog/assets/html/blog.html');
 }
 
 });

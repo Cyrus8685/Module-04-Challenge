@@ -16,7 +16,7 @@ header {
   --bg-color: white; /* Background color */
   --text-color: black; /* Text color */
   --border-color:black;
-  --mode-theme: url("/Users/cyrus/bootcamp/homework/Module-04-Challenge/assets/images/day-mode.png");
+  --mode-theme: url("/MyFirstBlog/assets/images/day-mode.png");
   --btn-bg-color: black;
   --btn-text-color: white;
 }
@@ -25,7 +25,7 @@ header {
   --bg-color: black; /* Background color */
   --text-color: white; /* Text color */
   --border-color: white;
-  --mode-theme: url("/Users/cyrus/bootcamp/homework/Module-04-Challenge/assets/images/moon-and-stars.png");
+  --mode-theme: url("/MyFirstBlog/assets/images/moon-and-stars.png");
   --btn-bg-color: white;
   --btn-text-color: black;
 
